@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다운로드</title>
+    <link rel="stylesheet" href="download.css">
+    <script>function android() {
+        window.location.assign('README.md');
+        }
+        function ios() {
+        alert("죄송합니다. ios 버전은 아직 개발중입니다. 그래서 대신 엔트리 배경화면을 드립니다.")
+        window.location.assign('README.md');
+        }
+    </script>
+</head>
+<body>
+    <p>안드로이드 버전 테마</p>
+    <div class="wrap">
+    <button class="button" onclick="android();">다운로드</button>
+    </div>
+    <p>IOS 버전 테마</p>
+    <div class="wrap">
+    <button class="button" onclick="ios();">다운로드</button>
+    </div>
+</body>
+</html>
