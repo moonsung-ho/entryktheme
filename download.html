@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다운로드</title>
     <link rel="stylesheet" href="download.css">
-    <script>function android() {
+    <script>
+        if (window.confirm("sungho0205는 이 앱으로 인해 발생하는 모든 문제에 대해서 책임을 지지 않습니다. 이에 동의하십니까?")) {
+        }
+        else {
+            alert ("그럼 이 앱을 사용하지 못합니다.")
+            window.history.back();
+        }
+        function android() {
         window.location.assign('theme.apk');
         }
         function ios() {
         alert("죄송합니다. ios 버전은 아직 개발중입니다.")
-        window.location.assign('/pictures/bg.png');
+        window.location.assign('/pictures/bg.zip');
         }
     </script>
 </head>
@@ -23,5 +30,6 @@
     <div class="wrap">
     <button class="button" onclick="ios();">다운로드</button>
     </div>
+
 </body>
 </html>
